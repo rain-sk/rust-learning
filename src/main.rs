@@ -1,3 +1,5 @@
+// Exercises from: https://stevedonovan.github.io/rust-gentle-intro/
+
 fn log_exercise(i: i32) {
     println!("\nExercise {}", i);
 }
