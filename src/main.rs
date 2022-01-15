@@ -59,7 +59,7 @@ fn main() {
         // labmdas and functions have similar syntax for declaring return types
         // let sqr = |x: f64| -> f64 { return x * x; };
         // if the last expression in a function leaves off the semicolon,
-        // the value of the expression will be returned
+        // the value of the expression is returned
         fn sqr(x: f64) -> f64 {
             x * x
         }
