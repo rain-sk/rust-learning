@@ -110,4 +110,24 @@ fn main() {
         let bigint: i64 = 0;
         println!("bigint is {}", bigint);
     });
+
+    log_exercise(|| {
+        // trig functions are part of floats
+        let pi: f64 = 3.14159265;
+        let x = pi / 2.0;
+        let cosine = x.cos();
+        println!("cosine is {}", cosine);
+    });
+
+    log_exercise(|| {
+        // PI exists!
+        let x = 2.0 * std::f64::consts::PI;
+        let abs_difference = (x.cos() - 1.0).abs();
+        println!(
+            "{} < {} ? {}",
+            abs_difference,
+            1e-10,
+            abs_difference < 1e-10
+        );
+    });
 }
